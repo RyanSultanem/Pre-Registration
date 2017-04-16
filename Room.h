@@ -3,7 +3,8 @@
 #include "Schedulable.h"
 #include "Schedule.h"
 
-class Room : public Schedulable{
+class Room : public Schedulable
+{
 
 private:
 	vector<Section> sectionList;

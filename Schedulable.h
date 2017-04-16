@@ -4,7 +4,8 @@ using namespace std;
 
 class Section;
 
-class Schedulable {
+class Schedulable 
+{
 
 public:
 	virtual vector<Section> getSections() = 0;
