@@ -60,8 +60,3 @@ bool Course::removeSection(Section * section)
 	return true;
 }
 
-bool Course::addConstraint(std::string constraintName, bool constraintValue)
-{
-	return false;
-}
-

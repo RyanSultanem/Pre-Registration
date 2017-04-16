@@ -38,7 +38,7 @@ void Section::setStatus(Status status)
 	mStatus = status;
 }
 
-Status Section::getStatus()
+Section::Status Section::getStatus()
 {
 	return mStatus;
 }
