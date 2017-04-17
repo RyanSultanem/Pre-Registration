@@ -14,6 +14,8 @@ public:
 	void setHasHighEnergyParticleAccelerator(bool hasHighEnergyParticleAccelerator);
 	bool HasHighEnergyParticleAccelerator();
 
+	bool matchingConstraint(Constraint* constraint);
+
 
 private:
 

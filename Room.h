@@ -2,16 +2,23 @@
 
 #include "Schedulable.h"
 #include "Schedule.h"
+#include "Section.hpp"
+#include "Constraint.hpp"
+#include <vector>
 
 class Room : public Schedulable
 {
 
 private:
-	vector<Section> sectionList;
+	std::vector<Section> sectionList;
 	Schedule* schedule;
+	Constraint* mConstraints; ///< constraints i.e: needComputers
+
 
 public:
-	vector<Section*> getSections() override;
+	std::vector<Section*> getSections() override;
+	void setConstraint(Constraint * constraint);
+	Constraint* getConstraint();
 
 
 };

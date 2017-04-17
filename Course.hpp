@@ -17,6 +17,9 @@ public:
 	void setDescription(std::string description);
 	std::string getDescription();
 
+	void setConstraint(Constraint* constraint);
+	Constraint* getConstraint();
+
 	bool addSection(Section* section);
 	bool removeSection(Section* section);
 

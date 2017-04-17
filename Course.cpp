@@ -36,12 +36,23 @@ std::string Course::getDescription()
 	return mDescription;
 }
 
+void Course::setConstraint(Constraint * constraint)
+{
+	mConstraints = constraint;
+}
+
+Constraint * Course::getConstraint()
+{
+	return mConstraints;
+}
+
 bool Course::addSection(Section * section)
 {
 	// check first if section is already in vector of sections or not
 	if (std::find(mSections.begin(), mSections.end(), section) == mSections.end())
 	{
 		// if section not already in vector
+		section->setConstraint(this->getConstraint());
 		mSections.push_back(section);
 		return true;
 	}

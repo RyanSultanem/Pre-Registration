@@ -82,3 +82,13 @@ std::vector<TimeSlot*> Section::getTimeSlots()
 {
 	return mTimeSlots;
 }
+
+void Section::setConstraint(Constraint * constraint)
+{
+	mConstraints = constraint;
+}
+
+Constraint * Section::getConstraint()
+{
+	return mConstraints;
+}

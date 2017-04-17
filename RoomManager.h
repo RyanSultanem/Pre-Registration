@@ -1,7 +1,8 @@
 #pragma once
 #include "Room.h"
-
-class Section;
+#include "Section.hpp"
+#include <vector>
+#include <algorithm>
 
 class RoomManager
 {
