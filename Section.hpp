@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 //#include "Professor.hpp"
-#include "TimeSlots.h"
+#include "TimeSlot.h"
 
 class Professor;
 

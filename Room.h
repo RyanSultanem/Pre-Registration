@@ -11,7 +11,7 @@ private:
 	Schedule* schedule;
 
 public:
-	vector<Section> getSections() override;
+	vector<Section*> getSections() override;
 
 
 };

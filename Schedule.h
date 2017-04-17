@@ -2,20 +2,20 @@
 
 #include "Schedulable.h"
 #include "TimeSlot.h"
-
-class Section;
+#include "Section.hpp"
 
 class Schedule {
 
 private:
 	Schedulable* mSchedulable;
-	vector<TimeSlot> mTimeSlots;
+	vector<TimeSlot*> mTimeSlots;
 	bool mContainsConflict;
 
 public:
 	Schedule(Schedulable* schedulable);
 	void generateSchedule();
-	bool hasConflictWith(Section section);
-	bool hasConflictWith(TimeSlot timeSlot);
-	bool hasConflictWith(vector<TimeSlot> timeSlots);
+	bool hasConflictWith(TimeSlot* timeSlot);
+	bool hasConflictWith(vector<TimeSlot*> timeSlots);
+	bool hasConflictWith(Section* section);
+	bool containsConflict();
 };

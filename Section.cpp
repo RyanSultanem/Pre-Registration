@@ -77,3 +77,8 @@ Professor * Section::getProfessor()
 {
 	return mProfessor;
 }
+
+std::vector<TimeSlot*> Section::getTimeSlots()
+{
+	return mTimeSlots;
+}
