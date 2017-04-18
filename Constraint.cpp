@@ -28,7 +28,7 @@ void Constraint::setHasSpeakers(bool hasSpeakers)
 
 bool Constraint::hasSpeakers()
 {
-	return mHasComputer;
+	return mHasSpeakers;
 }
 
 void Constraint::setHasHighEnergyParticleAccelerator(bool hasHighEnergyParticleAccelerator)
