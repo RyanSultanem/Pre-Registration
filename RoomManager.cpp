@@ -47,6 +47,7 @@ void RoomManager::assignRoom(Section * section)
 		if (constraintChecker(section, room))
 		{
 			section->setRoom(room);
+			room->addSection(section);
 			break;
 		}
 	}
