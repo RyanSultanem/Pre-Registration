@@ -20,6 +20,6 @@ public:
 	void addSection(Section* section);
 	void removeSection(Section* section);
 	void setConstraint(Constraint * constraint);
-	Schedule* getSchedule();
+	Schedule* getSchedule() override;
 	Constraint* getConstraint();
 };
